@@ -3,16 +3,53 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. 
   Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  background-image: var(--page-bg-color);
+  /* background-image: var(--page-bg-color);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   background-color: #000028;
 }
 
 .header {
+  background-image: var(--page-bg-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   block-size: 100vh;
   min-block-size: 668px;
   display: grid;
+  border: 1px solid red;
+}
+
+.no-focus {
+  
+  inline-size: min-content;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 0.83em;
+  text-shadow: 4px 4px #ff0070;
+  color: #db00ff;
+  border: 1px solid #db00ff;
+}
+
+.what-todo {
+  
+  inline-size: calc();
+  block-size: min-content;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3em;
+  color: #000028;
+  background-color: #ff0070;
+}
+
+@media (width <= 375px) {  
+  .no-focus {
+    font-size: 116px;
+    font-weight: 700;
+    line-height: 0.83em;
+    text-shadow: 4px 4px #ff0070;
+  }  
 }
