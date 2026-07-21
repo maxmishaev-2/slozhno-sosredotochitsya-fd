@@ -52,6 +52,8 @@
 }
 
 .what-todo {
+  width: 100%;  
+  /* inline-size: calc(); */
   block-size: min-content;
   font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 700;
