@@ -7,6 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; */
+  inline-size: 375px;
   background-color: #000028;
 }
 
@@ -21,21 +22,36 @@
   border: 1px solid red;
 }
 
-.no-focus {
+.header__theme-menu {
+  border: 1px solid green;
+}
+
+.header__theme-menu-list {
+  border: 1px solild fuchsia;
+  padding-right: 10px;
+  padding-left: auto;
+}
+
+.header__theme-menu-button {
   
-  inline-size: min-content;
+}
+
+.no-focus {  
+  inline-size: 355px;
+  block-size: min-content;
   font-family: 'IBM Plex Mono', sans-serif;
-  font-size: 116px;
+  /* font-size: 116px; */
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 0.83em;
   text-shadow: 4px 4px #ff0070;
   color: #db00ff;
   border: 1px solid #db00ff;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .what-todo {
-  
-  inline-size: calc();
   block-size: min-content;
   font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 700;
@@ -43,13 +59,15 @@
   line-height: 1.3em;
   color: #000028;
   background-color: #ff0070;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-@media (width <= 375px) {  
+/* @media (width <= 375px) {  
   .no-focus {
     font-size: 116px;
     font-weight: 700;
     line-height: 0.83em;
     text-shadow: 4px 4px #ff0070;
   }  
-}
+} */
