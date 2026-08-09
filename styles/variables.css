@@ -4,5 +4,6 @@
 */
 
 :root {
-  --page-bg-color: url("./images/cover-image-dark.png");
+  --page-bg-color: url(../images/cover-image-dark.png);
+  --accent-color: #ff0070;
 }
