@@ -132,3 +132,34 @@
     text-shadow: 4px 4px #ff0070;
   }  
 } */
+
+.main {
+  background-color: var(--card-bg-color);
+}
+
+.main__title-2 {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--accent-color);
+}
+
+.main__title-3 {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--card-bg-color);
+  background-color: var(--accent-color);
+}
+
+.main__paragraph-text {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--card-paragraph-text-color);
+}
+
+
