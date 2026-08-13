@@ -6,6 +6,7 @@
 :root {
   --page-bg-color: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
-  --card-bg-color: #000028;
+  --card-title-text-color: #000028;
   --card-paragraph-text-color: #f1b2ce;
+  --focus-nofocus-skin: #db00ff;
 }
