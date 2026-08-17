@@ -9,14 +9,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* inline-size: 375px; */
   inline-size: 100%;
 }
 
 .header {
   position: relative;
-  block-size: 100vh;
-  min-block-size: 668px;
+  /* block-size: 100vh;
+  min-block-size: 650px; */
+  block-size: minmax(668px, 100vh);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -93,7 +93,7 @@
 }
 
 .header__theme-menu-button {
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: 'IBM Plex mono', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 18px;
   text-transform: lowercase;
@@ -141,21 +141,21 @@
 }
 
 .header__paragraph {
-  inline-size: 355px;
-  block-size: min-content;
-  justify-self: center;
-  align-self: center;
-}
-
-.title-decor {
-  
   font-family: 'IBM Plex mono', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3em;
+  inline-size: 355px;
+  block-size: min-content;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+/* .title-decor {
   color: var(--card-title-text-color);
   background-color: var(--accent-color);
-}
+} */
 
 /* @media (width <= 375px) {  
   .no-focus {
@@ -181,7 +181,7 @@
 }
 
 .main__title { 
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: 'IBM Plex mono', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3em; 
@@ -199,13 +199,17 @@
   background-color: var(--accent-color);
 }
 
-.main__title-paragraph-not-bold {
-  font-weight: 400;
+.title-decor {
   color: var(--card-title-text-color);
   background-color: var(--accent-color);
 }
 
+.title-not-bold {
+  font-weight: 400;
+}
+
 .main__paragraph-text {
+  /* height: min-content; */
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -289,7 +293,8 @@
     padding: 20px;
   }
 
-  .header__title {
+  .header__title {clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: 
     justify-self:start;
   }
 
@@ -305,7 +310,7 @@
 
   .main__section-article-start-decor {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, min-content);
   }
 
   .main__title-start {
@@ -325,9 +330,20 @@
     inline-size: min-content;
   }
 
-  .main__title-start {
+  .main__section-article-final-decor {
+    grid-template-columns: 1fr, 2fr;
+    grid-template-rows: grid-auto-fill, repeat(auto-fill, min-content);
+  }
+
+  .main__title-final {
+    grid-row: 1 / 7;
     grid-column: 1;
   }
+
+  .main__title_and_paragraph-final {
+    grid-column: 2 / 4;
+  }
+
 }
 
 @media (width > 1024px) {
